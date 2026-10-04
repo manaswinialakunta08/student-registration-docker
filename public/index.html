@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Create your XYZ University student account."
+    >
+
+    <title>XYZ University | Create Account</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <section class="signup-card" aria-labelledby="signup-title">
+
+            <div class="brand">
+                <div class="brand-icon">X</div>
+                <span>XYZ University</span>
+            </div>
+
+            <div class="header">
+                <h1 id="signup-title">Create your account</h1>
+                <p>
+                    Join XYZ University to access important notes,
+                    lectures, and academic resources.
+                </p>
+            </div>
+
+            <form
+                action="/addUser"
+                method="POST"
+                target="_blank"
+                id="signupForm"
+            >
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="jane@email.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Jane Doe"
+                        autocomplete="username"
+                        minlength="3"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+
+                    <small>
+                        Password must contain at least 6 characters.
+                    </small>
+                </div>
+
+                <button type="submit" id="formBtn">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="login-text">
+                Already have an account?
+                <a href="#">Sign in</a>
+            </p>
+
+            <p class="terms">
+                By creating an account, you agree to our
+                <a href="#">Terms of Service</a>
+                and
+                <a href="#">Privacy Policy</a>.
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+
