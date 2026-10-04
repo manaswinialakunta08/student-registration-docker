@@ -109,7 +109,7 @@ Creates a new user record in the MongoDB collection.
 
 ## Notes
 
-- The application uses `apnacollege-db` as the database name and `users` as the collection name.
+
 - Docker Compose configures the application to connect to MongoDB using the service name `mongo`.
 - MongoDB data is persisted using a Docker volume so it remains available between restarts.
 
