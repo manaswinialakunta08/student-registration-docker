@@ -1,4 +1,4 @@
-# Student Registration Docker Project
+# Student Registration Docker 
 
 A simple student registration application built with Node.js, Express, and MongoDB. The project is containerized with Docker so it can be launched quickly in a consistent local environment.
 
